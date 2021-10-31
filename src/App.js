@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect } from 'react';
 import SpotifyWebApi from 'spotify-web-api-js';
 import './App.css';
 
@@ -14,7 +14,7 @@ const spotify = new SpotifyWebApi();
 
 function App() {
 
-  const [{ user, token }, dispatch] = useDataValue();
+  const [{ token }, dispatch] = useDataValue();
 
   useEffect(() => {
 
@@ -41,14 +41,14 @@ function App() {
       
     }
 
-  }, [])
+  }, [dispatch])
 
   return (
     <div className="App">
       {
         token ? 
         
-        <Player /> 
+        <Player spotify={spotify} /> 
         
         : <Login />
       }

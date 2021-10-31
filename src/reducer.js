@@ -6,10 +6,10 @@ export const initialState = {
     top_artists: null,
     playing: false,
     item: null,
+    token: null
   };
 
 function reducer(state, action) {
-    console.log(action);
     switch (action.type) {
       case "SET_USER":
         return {
