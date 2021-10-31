@@ -3,7 +3,7 @@ import './bodyStyles.css'
 
 export default function Body() {
     return(
-        <div>
+        <div className="body__container">
             <h1>I'm a body</h1>
         </div>
     )

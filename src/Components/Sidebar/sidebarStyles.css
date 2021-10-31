@@ -1,4 +1,14 @@
 .sidebar__body {
-    border: 1px solid black;
     height: 100vh;
+    flex: 0.2;
+    background-color: #040404;
+    color: white;
+    min-width: 3rem;
+    padding: 0rem 0.5rem 0rem 0.5rem;
+}
+
+.sidebar__logo {
+    height: 4rem;
+    margin: auto;
+    padding: 1rem;
 }

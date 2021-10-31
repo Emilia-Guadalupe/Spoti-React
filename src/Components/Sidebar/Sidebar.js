@@ -4,7 +4,7 @@ import './sidebarStyles.css'
 function Sidebar() {
     return(
         <div className="sidebar__body">
-            <h1>Hi! I'm a Sidebar</h1>
+            <img  className="sidebar__logo" src="https://getheavy.com/wp-content/uploads/2019/12/spotify2019-830x350.jpg" alt="spotify logo" />
         </div>
     )
 }
