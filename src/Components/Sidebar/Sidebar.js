@@ -13,6 +13,11 @@ function Sidebar() {
             <SidebarOption title="Home" Icon={HomeIcon} />
             <SidebarOption title="Search" Icon={SearchIcon} />
             <SidebarOption title="Your Library" Icon={LibraryMusicIcon} />
+
+            <div className="sidebar__title">
+                <h4>PLAYLISTS</h4>
+                <hr />
+            </div>
         </div>
     )
 }
